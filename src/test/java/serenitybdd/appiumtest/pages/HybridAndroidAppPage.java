@@ -41,6 +41,5 @@ public class HybridAndroidAppPage extends PageObject {
 
     public void list_should_be_visible() {
         waitFor(list);
-        System.out.println("List is visible !!!!!!!!!!! " + list + " " + list.getClass());
     }
 }
