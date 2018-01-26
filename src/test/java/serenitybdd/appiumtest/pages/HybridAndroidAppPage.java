@@ -1,32 +1,30 @@
 package serenitybdd.appiumtest.pages;
 
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.iOSFindBy;
-import net.serenitybdd.core.pages.PageObject;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import io.appium.java_client.pagefactory.*;
+import net.serenitybdd.core.pages.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
 
 public class HybridAndroidAppPage extends PageObject {
 
     @AndroidFindBy(id="android:id/list")
     @iOSFindBy(id="android:id/list")
-    private WebElement list;
+    private WebElementFacade list;
 
     @FindBy(id="btnAdd")
-    private WebElement btnAdd;
+    private WebElementFacade btnAdd;
 
     @FindBy(id="btnToast")
-    private WebElement btnToast;
+    private WebElementFacade btnToast;
 
     @FindBy(id="btnDeviceInfo")
-    private WebElement btnDeviceInfo;
+    private WebElementFacade btnDeviceInfo;
 
     @FindBy(id="btnUrl")
-    private WebElement btnUrl;
+    private WebElementFacade btnUrl;
 
     @FindBy(id="bookmark")
-    private WebElement textField;
+    private WebElementFacade textField;
 
 
     public void addItem(String text){
